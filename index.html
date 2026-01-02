@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МГУ (Украина) – Официальное представительство в Молдове</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <p>Официальное представительство МГУ в Молдове</p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="images/logo.png" alt="МГУ Логотип">
+            </div>
+            
+            <!-- Desktop Navigation Links -->
+            <div class="navbar-links">
+                <a href="#about">О нас</a>
+                <a href="#programs">Программы</a>
+                <a href="#admission">Поступление</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            
+            <div class="navbar-contact">
+                <a href="tel:+37379768982" class="phone-number">+373 797 68 982</a>
+            </div>
+
+            <button class="hamburger-menu" aria-label="Меню" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Menu -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <button class="close-btn" id="closeBtn" aria-label="Закрыть меню">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#about" class="sidebar-link">О нас</a>
+            <a href="#programs" class="sidebar-link">Программы</a>
+            <a href="#admission" class="sidebar-link">Поступление</a>
+            <a href="#faq" class="sidebar-link">FAQ</a>
+            <a href="#contacts" class="sidebar-link">Контакты</a>
+        </nav>
+        <div class="sidebar-contact">
+            <a href="tel:+37379768982" class="sidebar-phone">+373 797 68 982</a>
+            <div class="sidebar-social-icons">
+                <a href="https://wa.me/37379768982" target="_blank" class="sidebar-social-icon whatsapp">
+                    <img src="images/social-icons/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="viber://chat?number=37379768982" class="sidebar-social-icon viber">
+                    <img src="images/social-icons/viber.png" alt="Viber">
+                </a>
+                <a href="https://t.me/37379768982" target="_blank" class="sidebar-social-icon telegram">
+                    <img src="images/social-icons/telegram.png" alt="Telegram">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="images/hero_image.png" alt="Студенты МГУ">
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Поступление в МГУ<br>на Высшее Образование</h1>
+                <p class="hero-subtitle">Официальное представительство МГУ помогает студентам из Молдовы поступить на высшее образование <span class="highlight">100% ДИСТАНЦИОННО</span></p>
+                <a href="#contact" class="hero-cta">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</a>
+                
+                <!-- Quote Section -->
+                <div class="hero-quote">
+                    <p class="quote-text">«Образование - это самый могущественный инструмент для того, чтобы изменить мир»</p>
+                    <p class="quote-author">Нельсон Мандела</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee">
+        <div class="guarantee-container">
+            <div class="guarantee-card">
+                <h2 class="guarantee-title">Мы <span class="highlight-blue">гарантируем</span>, что вы поступите, даже если:</h2>
+                
+                <ul class="guarantee-list">
+                    <li>У вас низкий средний бал</li>
+                    <li>Вы хотите учиться полностью онлайн</li>
+                    <li>Вы работаете full-time и учитесь параллельно</li>
+                    <li>Вам важен официальный диплом, признанный в Молдове и ЕС</li>
+                    <li>Личный ментор, который всегда на связи</li>
+                </ul>
+                
+                <div class="guarantee-image">
+                    <img src="images/garantee_section_img.png" alt="Команда МГУ">
+                </div>
+                
+                <div class="guarantee-cta-group">
+                    <a href="#contact" class="guarantee-cta primary">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</a>
+                    <a href="#details" class="guarantee-cta secondary">УЗНАТЬ ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+            
+            <p class="guarantee-proof">Более 200 студентов поступили <span class="nowrap">благодаря нам</span></p>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
