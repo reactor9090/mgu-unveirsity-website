@@ -1242,3 +1242,119 @@ body.sidebar-open {
         font-size: 15px;
     }
 }
+
+
+/* FAQ Section */
+.faq {
+    background-color: #FFFFFF;
+    padding: 80px 0;
+}
+
+.faq-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.faq-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #253457;
+    margin-bottom: 40px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.faq-item {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #7A7A7A;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #253457;
+}
+
+.faq-icon {
+    font-size: 16px;
+    color: #7A7A7A;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 1000px;
+    padding-bottom: 24px;
+}
+
+.faq-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.faq-answer p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #253457;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* FAQ Section - Mobile */
+@media (max-width: 1023px) {
+    .faq {
+        padding: 40px 0;
+    }
+    
+    .faq-container {
+        padding: 0 16px;
+    }
+    
+    .faq-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    
+    .faq-question {
+        font-size: 18px;
+        padding: 20px 0;
+    }
+    
+    .faq-answer p {
+        font-size: 15px;
+    }
+}
